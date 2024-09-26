@@ -24,7 +24,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="flex justify-between container h-[4rem] mx-auto px-4 lg:px-0 pt-5">
+            <header className="flex justify-between container h-[5rem] mx-auto px-4 lg:px-0 pt-5 pb-5">
                 <div className='flex items-center'>
                     <a className="" href="">
                         <img src="/assets/images/logo.png" alt="logo" className="w-3/5 lg:p-3 y-auto object-contain xl:max-h-24" />
