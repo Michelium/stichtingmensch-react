@@ -7,16 +7,16 @@ const Header = () => {
 
     const MenuItems = () => (
         <>
-            <a className="text-md lg:text-lg whitespace-nowrap" href="">
+            <a className="text-md lg:text-lg whitespace-nowrap" href="#missie_en_visie">
                 Missie en visie
             </a>
-            <a className="text-md lg:text-lg whitespace-nowrap" href="">
+            <a className="text-md lg:text-lg whitespace-nowrap" href="#werkwijze">
                 Onze werkwijze
             </a>
-            <a className="text-md lg:text-lg whitespace-nowrap" href="">
+            <a className="text-md lg:text-lg whitespace-nowrap" href="#de_stichting">
                 De stichting
             </a>
-            <a className="text-md lg:text-lg whitespace-nowrap" href="">
+            <a className="text-md lg:text-lg whitespace-nowrap" href="#contact">
                 Contact
             </a>
         </>
@@ -24,7 +24,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="flex justify-between container h-[5rem] mx-auto px-4 lg:px-0 pt-5 pb-5">
+            <header className="flex justify-between container h-[5rem] lg:px-0 pt-5 pb-5">
                 <div className='flex items-center'>
                     <a className="" href="">
                         <img src="/assets/images/logo.png" alt="logo" className="w-3/5 lg:p-3 y-auto object-contain xl:max-h-24" />
