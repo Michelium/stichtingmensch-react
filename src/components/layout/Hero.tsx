@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <div className="relative bg-gradient-to-r h-[calc(100vh-5rem)] lg:h-[60vh] text-white overflow-hidden">
             <div className="absolute inset-0">
-                <img src="/assets/images/thehague.jpg" alt="Hero background image of The Hague"
+                <img src="/assets/images/the_hague.jpg" alt="Hero background image of The Hague"
                      className="object-cover object-center w-full h-full blur"/>
                 <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
