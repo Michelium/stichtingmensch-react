@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, {BaseSyntheticEvent, useRef, useState} from 'react';
 import { MdOutlineMail } from "react-icons/md";
 import emailjs from '@emailjs/browser';
 
@@ -10,7 +10,7 @@ const Contact = () => {
     const [successMessage, setSuccessMessage] = useState('');
     const [loading, setLoading] = useState(false); 
 
-    const sendEmail = (e: any) => {
+    const sendEmail = (e: BaseSyntheticEvent) => {
         if (formSuccess || loading) return;
 
         e.preventDefault();
