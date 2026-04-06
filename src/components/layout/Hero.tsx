@@ -23,10 +23,6 @@ const Hero = () => {
                     <p className="text-lg leading-8 text-slate-100/95 md:text-xl">
                         Een <span className="italic text-white font-semibold">mensch</span> is iemand die bewonderenswaardig is, iemand die handelt met empathie, eerlijkheid en een sterk gevoel van wat juist is.
                     </p>
-                    <div className="my-6 h-px w-full bg-gradient-to-r from-transparent via-white/35 to-transparent"></div>
-                    <p className="text-sm leading-6 text-slate-200/90">
-                        Deze betekenis vormt de basis van alles wat wij doen: mensen samenbrengen en ruimte maken voor duurzame betrokkenheid.
-                    </p>
                 </div>
             </div>
         </section>

@@ -5,7 +5,7 @@ const Contact = () => {
 
     return (
         <footer className='bg-slate-900 border-t border-slate-800 mt-10' id='contact'>
-            <div className="container flex flex-col md:flex-row md:justify-between py-8 md:py-10 gap-x-12 gap-y-6 items-start">
+            <div className="container flex flex-col md:flex-row md:justify-between py-8 md:py-10 gap-x-12 gap-y-6 items-center">
                 <img className='max-w-72 md:max-w-80 object-contain brightness-0 invert opacity-95' src="/assets/images/logo.png" alt="Stichting Mensch logo"/>
                 <div className='md:w-1/3 flex flex-col gap-y-3 mt-2 md:mt-0'>
                     <p className='text-slate-100 font-semibold tracking-tight'>Stichting Mensch</p>
