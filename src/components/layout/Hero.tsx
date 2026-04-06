@@ -19,7 +19,7 @@ const Hero = () => {
                     <p className="mt-5 max-w-lg text-lg leading-relaxed text-slate-100/90 md:text-2xl">Maatschappelijke verbinding en sociale cohesie, met aandacht voor menselijke waardigheid.</p>
                 </div>
 
-                <div className="rounded-3xl border border-white/25 bg-white/12 p-6 shadow-2xl backdrop-blur-sm md:p-8">
+                <div className="rounded-3xl border border-white/25 bg-white/12 p-6 shadow-2xl backdrop-blur-md md:p-8">
                     <p className="text-lg leading-8 text-slate-100/95 md:text-xl">
                         Een <span className="italic text-white font-semibold">mensch</span> is iemand die bewonderenswaardig is, iemand die handelt met empathie, eerlijkheid en een sterk gevoel van wat juist is.
                     </p>
