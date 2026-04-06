@@ -2,18 +2,26 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <div className="relative bg-gradient-to-r h-[calc(100vh-5rem)] lg:h-[60vh] text-white overflow-hidden">
+        <section className="relative overflow-hidden text-white">
             <div className="absolute inset-0">
                 <img src="/assets/images/the_hague.jpg" alt="Hero background image of The Hague"
-                     className="object-cover object-center w-full h-full blur"/>
-                <div className="absolute inset-0 bg-black opacity-50"></div>
+                     className="object-cover object-center w-full h-full"/>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/75 via-slate-900/65 to-mensch-green/35"></div>
             </div>
 
-            <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-                <h1 className="text-5xl font-bold leading-tight mb-4">Stichting Mensch</h1>
-                <p className="text-lg text-gray-300 mb-8">Maatschappelijk en sociale cohesie</p>
+            <div className="container relative z-10 grid min-h-[68vh] md:min-h-[74vh] items-center gap-10 py-16 md:grid-cols-2 md:py-20">
+                <div className="max-w-xl">
+                    <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight">Stichting Mensch</h1>
+                    <p className="mt-4 text-lg md:text-2xl text-slate-100/90">Maatschappelijk en sociale cohesie</p>
+                </div>
+
+                <div className="rounded-3xl bg-white/12 backdrop-blur-sm border border-white/25 p-6 md:p-8 shadow-2xl">
+                    <p className="text-lg md:text-xl leading-relaxed text-slate-100">
+                        Een <span className="italic text-white font-semibold">mensch</span> is iemand die bewonderenswaardig is, iemand die handelt met empathie, eerlijkheid en een sterk gevoel van wat juist is.
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
 
     );
 };

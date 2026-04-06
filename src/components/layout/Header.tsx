@@ -5,18 +5,34 @@ import {IoClose} from "react-icons/io5";
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    const MenuItems = () => (
+    const MenuItems = ({ mobile = false }: { mobile?: boolean }) => (
         <>
-            <a className="text-md lg:text-lg whitespace-nowrap" href="#missie_en_visie">
+            <a
+                className={mobile ? "text-base font-medium" : "text-sm lg:text-base text-slate-600/80 hover:text-slate-900 transition-colors whitespace-nowrap"}
+                href="#missie_en_visie"
+                onClick={() => setMobileMenuOpen(false)}
+            >
                 Missie en visie
             </a>
-            <a className="text-md lg:text-lg whitespace-nowrap" href="#werkwijze">
+            <a
+                className={mobile ? "text-base font-medium" : "text-sm lg:text-base text-slate-600/80 hover:text-slate-900 transition-colors whitespace-nowrap"}
+                href="#werkwijze"
+                onClick={() => setMobileMenuOpen(false)}
+            >
                 Onze werkwijze
             </a>
-            <a className="text-md lg:text-lg whitespace-nowrap" href="#de_stichting">
+            <a
+                className={mobile ? "text-base font-medium" : "text-sm lg:text-base text-slate-600/80 hover:text-slate-900 transition-colors whitespace-nowrap"}
+                href="#de_stichting"
+                onClick={() => setMobileMenuOpen(false)}
+            >
                 De stichting
             </a>
-            <a className="text-md lg:text-lg whitespace-nowrap" href="#contact">
+            <a
+                className={mobile ? "text-base font-medium" : "text-sm lg:text-base text-slate-600/80 hover:text-slate-900 transition-colors whitespace-nowrap"}
+                href="#contact"
+                onClick={() => setMobileMenuOpen(false)}
+            >
                 Contact
             </a>
         </>
@@ -24,24 +40,30 @@ const Header = () => {
 
     return (
         <>
-            <header className="flex justify-between container h-[5rem] lg:px-0 pt-5 pb-5">
-                <div className='flex items-center'>
-                    <a className="" href="">
-                        <img src="/assets/images/logo.png" alt="logo" className="w-3/5 lg:p-3 y-auto object-contain xl:max-h-24" />
+            <header className="relative z-40 w-full border-b border-slate-200/80 bg-white/95">
+                <div className="container flex h-24 items-center justify-between">
+                    <a href="#" className="flex items-center">
+                        <img src="/assets/images/logo.png" alt="Stichting Mensch logo" className="h-16 md:h-20 w-auto object-contain" />
                     </a>
+
+                    <nav className="hidden md:flex items-center gap-x-6 xl:gap-x-8">
+                        <MenuItems />
+                    </nav>
+
+                    <button
+                        className="md:hidden text-2xl text-slate-700"
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        aria-label={mobileMenuOpen ? "Sluit menu" : "Open menu"}
+                    >
+                        {mobileMenuOpen ? <IoClose /> : <GiHamburgerMenu />}
+                    </button>
                 </div>
-                <nav className="hidden md:flex my-auto md:gap-x-5 xl:gap-x-12">
-                    <MenuItems />
-                </nav>
-                <button className="md:hidden text-2xl" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} >
-                    {mobileMenuOpen ? <IoClose /> : <GiHamburgerMenu />}
-                </button>
             </header>
 
             {mobileMenuOpen && (
-                <div className="md:hidden absolute top-16 left-0 w-full bg-white z-50 shadow-lg">
-                    <nav className="flex flex-col items-center gap-y-4 p-4">
-                        <MenuItems />
+                <div className="md:hidden absolute top-24 left-0 w-full z-50 px-4">
+                    <nav className="container mx-auto flex flex-col items-center gap-y-4 p-6 rounded-3xl bg-white border border-slate-200 shadow-lg">
+                        <MenuItems mobile />
                     </nav>
                 </div>
             )}
