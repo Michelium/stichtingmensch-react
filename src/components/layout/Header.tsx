@@ -8,28 +8,28 @@ const Header = () => {
     const MenuItems = ({ mobile = false }: { mobile?: boolean }) => (
         <>
             <a
-                className={mobile ? "text-base font-medium" : "text-sm lg:text-base text-slate-600/80 hover:text-slate-900 transition-colors whitespace-nowrap"}
+                className={mobile ? "text-base font-medium tracking-tight text-slate-800" : "text-sm lg:text-base font-medium tracking-tight text-slate-600/90 hover:text-slate-900 transition-colors whitespace-nowrap"}
                 href="#missie_en_visie"
                 onClick={() => setMobileMenuOpen(false)}
             >
                 Missie en visie
             </a>
             <a
-                className={mobile ? "text-base font-medium" : "text-sm lg:text-base text-slate-600/80 hover:text-slate-900 transition-colors whitespace-nowrap"}
+                className={mobile ? "text-base font-medium tracking-tight text-slate-800" : "text-sm lg:text-base font-medium tracking-tight text-slate-600/90 hover:text-slate-900 transition-colors whitespace-nowrap"}
                 href="#werkwijze"
                 onClick={() => setMobileMenuOpen(false)}
             >
                 Onze werkwijze
             </a>
             <a
-                className={mobile ? "text-base font-medium" : "text-sm lg:text-base text-slate-600/80 hover:text-slate-900 transition-colors whitespace-nowrap"}
+                className={mobile ? "text-base font-medium tracking-tight text-slate-800" : "text-sm lg:text-base font-medium tracking-tight text-slate-600/90 hover:text-slate-900 transition-colors whitespace-nowrap"}
                 href="#de_stichting"
                 onClick={() => setMobileMenuOpen(false)}
             >
                 De stichting
             </a>
             <a
-                className={mobile ? "text-base font-medium" : "text-sm lg:text-base text-slate-600/80 hover:text-slate-900 transition-colors whitespace-nowrap"}
+                className={mobile ? "text-base font-medium tracking-tight text-slate-800" : "text-sm lg:text-base font-medium tracking-tight text-slate-600/90 hover:text-slate-900 transition-colors whitespace-nowrap"}
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
             >
